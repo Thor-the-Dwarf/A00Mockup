@@ -1,0 +1,29 @@
+1.) Erstelle in der Klasse der tdlist.component.ts
+das Attribut "offeneTodos" vom typ number. Dann binde es via Interpolation an die 0 (Sie html unten)
+
+2.) Erstelle in der Klasse der tdlist.component.ts
+das Attribut "newTodo" vom typ string. Dann binde es via TwoWayBinding an das Input (Sie html unten)
+
+3.) Erstelle in der Klasse der tdlist.component.ts
+die Methode addTodo() vom typ void. Dann binde Event Binding an den Button (Sie html unten)
+
+4.) Erstelle in der Klasse der tdlist.component.ts
+einen Algorythmus für die addTodo() der:
+	- todoData[] ein weiteres element hinzufügt
+	- den Inhalt des Inputs leert
+	- nicht ausgeführt wird wenn kein inhalt im Input ist
+
+
+
+<div id="parent">
+  <h1>Meine Todos</h1>
+  <p>offene todos: 0 </p>		<- 1.)
+  <div>
+    <input type="text">			<- 2.)
+    <button>hinzufügen</button>	<- 3.)
+  </div>
+  <div id="childspace">
+    <p  *ngFor="let element of todoData;"> {{element.title}} </p>
+  </div>
+</div>
+

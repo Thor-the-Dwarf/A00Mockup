@@ -1,0 +1,12 @@
+<div id="parent">
+  <h1>Meine Todos</h1>
+  <p>offene todos: 0 </p>
+  <div>
+    <input type="text">
+    <button>hinzufügen</button>
+  </div>
+  <div id="childspace">
+    <p  *ngFor="let element of todoData;"> {{element.title}} </p>
+  </div>
+</div>
+
